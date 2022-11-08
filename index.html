@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase CRUD</title>
+
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/yeti/bootstrap.min.css"
+    />
+  </head>
+
+  <body class="bg-dark">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="h4">TEAM CHECKSHOES</h1>
+
+              <form id="task-form">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  id="task-name"
+                  class="form-control mb-3"
+                  class="My Name"
+                  placeholder="Enter Your Name"
+                  autofocus
+                />
+                <label for="last name">Last Name:</label>
+                <input
+                  type="text"
+                  id="task-lastname"
+                  class="form-control mb-3"
+                  class="My Last Name"
+                  placeholder="Enter Your Last Name"
+                  autofocus
+                />
+                <label for="position">Position:</label>
+                <input
+                  type="text"
+                  id="task-position"
+                  class="form-control mb-3"
+                  class="My Position"
+                  placeholder="Enter Your Position"
+                  autofocus
+                />
+                <label for="description">Description:</label>
+                <textarea
+                  id="task-description"
+                  rows="3"
+                  class="form-control mb-3"
+                  placeholder="Enter a Description"
+                ></textarea>
+
+                <button class="btn btn-success" id="btn-task-form">Save</button>
+              </form>
+              <h4 class="h5">Esteban Vega | Sistemas Distribuidos | Utadeo</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" id="tasks-container"></div>
+      </div>
+    </div>
+
+   
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
